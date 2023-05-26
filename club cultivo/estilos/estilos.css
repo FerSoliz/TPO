@@ -1,0 +1,297 @@
+*{
+    font-family: 'Pangolin', cursive;
+    background-color: #514848;
+    /* color: green; */
+   
+} 
+
+.container-navbar{
+  margin-left: -20px;
+}
+
+
+
+
+footer {
+    color: white;
+    background-color: #514848;
+    padding: 20px;
+    text-align: center;
+    
+  }
+
+  .social-icons {
+    margin-bottom: 10px;
+    font-size: 30px;
+    display: inline-block;
+    margin-right: 10px;   
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .social-icons a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    position: relative;
+    transition: color 0.3s, transform 0.3s;
+  }
+
+  .social-icons a::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #0cf41b;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+  }
+  .social-icons a:hover {
+    color: #0cf41b;
+    transform: translateY(-2px);
+  }
+  .social-icons a:hover::before {
+    transform: scaleX(1);
+  }
+
+  
+
+
+  body {
+    /* font-family: Arial, sans-serif; */
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  /* Estilos para la barra de navegación */
+.navbar {
+
+    padding: 10px;
+    display: flex;
+    justify-content: right
+}
+  
+  .navbar a {
+     color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    position: relative;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  /* Efecto hover */
+  .navbar a::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #0cf41b;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+  }
+  
+  .navbar a:hover {
+    color: #0cf41b;
+    transform: translateY(-2px);
+  }
+  
+  .navbar a:hover::before {
+    transform: scaleX(1);
+  }
+  
+  /* Efecto de cambio de color al hacer clic */
+  .navbar a:active {
+    background-color: #777;
+  }
+.contenedor-final{
+
+
+    text-align: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+
+}
+.mapa{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slides-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.controls {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+.prev-btn,
+.next-btn {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  margin: 0 5px;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  color: #aaa;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slides-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.controls {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+.prev-btn,
+.next-btn {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  margin: 0 5px;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  color: #aaa;
+}
+.container-header {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* display: grid;
+  grid-template-columns: 2fr 1fr;
+  text-align: center;
+  gap: 10px; */
+
+  display: flex;
+
+
+}
+.nombre-marca{
+
+  color: white;
+
+}
+header{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+}
+
+@media screen and (max-width: 800px) {
+
+
+  .navbar {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+   
+  }
+
+  .navbar.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #514848;
+    width: 50%;
+    top: 5vh;
+    height:vh;
+    z-index: 1;
+  }
+
+  .navbar.active a {
+    margin: 15px;
+  }
+
+  .footer{
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+}
